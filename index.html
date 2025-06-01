@@ -2,85 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdul Majid - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Majid - Professional Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
       background-color: #f8f9fa;
       color: #333;
     }
-
     .hero {
       background: linear-gradient(to right, #1d3557, #457b9d);
       padding: 120px 0;
       color: white;
     }
-
     .hero h1 {
       font-size: 3.5rem;
       font-weight: 700;
     }
-
     .hero p {
       font-size: 1.3rem;
       font-weight: 300;
     }
-
     section h2 {
       font-weight: 600;
       margin-bottom: 30px;
     }
-
     .card {
       border: none;
       border-radius: 1rem;
       transition: transform 0.3s;
     }
-
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
-
+    .nav-link {
+      cursor: pointer;
+    }
     footer {
       background-color: #212529;
     }
-
-    .navbar-dark .navbar-nav .nav-link {
-      color: #ddd;
-    }
-
-    .navbar-dark .navbar-nav .nav-link.active,
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #fff;
-    }
-
-    img {
-      border-radius: 10px;
-    }
-
     .btn-primary {
       background-color: #1d3557;
       border-color: #1d3557;
     }
-
     .btn-primary:hover {
       background-color: #16324f;
-      border-color: #16324f;
     }
-
-    .list-icon {
-      margin-right: 10px;
+    .icon-box {
+      font-size: 2rem;
       color: #1d3557;
     }
   </style>
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
     <div class="container">
@@ -93,7 +72,7 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -123,22 +102,21 @@
         </div>
         <div class="col-md-6">
           <h2>About Me</h2>
-          <p>Master of Social Work with 1+ year of experience leading 5+ programs in disability inclusion, women's empowerment, labour advocacy, education, and political consultation.</p>
-          <p>Skilled in community engagement, advocacy, and research impacting over 5000+ lives.</p>
+          <p>I am a passionate social worker with a Master's degree and over a year of experience in leading impactful programs. My work spans across disability inclusion, women’s empowerment, migrant advocacy, and more.</p>
+          <p>I'm skilled in gender sensitisation, stakeholder engagement, and community development — reaching and transforming the lives of 5000+ individuals.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Qualifications Section -->
+  <!-- Qualifications -->
   <section id="qualifications" class="py-5 bg-light">
     <div class="container text-center">
-      <h2>My Qualifications</h2>
+      <h2><i class="fas fa-user-graduate"></i> My Qualifications</h2>
       <div class="row g-4 mt-4">
         <div class="col-md-4">
           <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-user-graduate fa-3x mb-3 text-primary"></i>
               <h5 class="card-title">Master's Degree</h5>
               <p class="card-text">Social Work</p>
             </div>
@@ -147,7 +125,6 @@
         <div class="col-md-4">
           <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-landmark fa-3x mb-3 text-primary"></i>
               <h5 class="card-title">Bachelor of Arts</h5>
               <p class="card-text">Political Science</p>
             </div>
@@ -156,9 +133,8 @@
         <div class="col-md-4">
           <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
               <h5 class="card-title">Diploma</h5>
-              <p class="card-text">Fire and Safety Engineering</p>
+              <p class="card-text">Fire & Safety Engineering</p>
             </div>
           </div>
         </div>
@@ -166,74 +142,82 @@
     </div>
   </section>
 
-  <!-- Experiences Section -->
-  <section id="experience" class="py-5">
+  <!-- Experiences -->
+  <section id="experiences" class="py-5">
     <div class="container">
-      <h2 class="text-center">Experiences</h2>
-      <ul class="list-unstyled">
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Concept of Living Charitable Trust (PAN India)</strong> – POCSO Act Training Expert<br><em>Role: XYZ</em></li>
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Jan Suraaj, Bihar Madhepura</strong> – Fellow<br><em>Role: XYZ</em></li>
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Krunodaya Foundation, Bihar Gaya</strong> – Program Manager<br><em>Role: XYZ</em></li>
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Jan Sahas, Delhi</strong> – Intern<br><em>Role: XYZ</em></li>
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Ideal Information Centre for Disabled, Hyderabad</strong> – Field Practitioner<br><em>Role: XYZ</em></li>
-        <li><i class="fas fa-briefcase list-icon"></i><strong>Open Community, Hyderabad</strong> – Field Practitioner<br><em>Role: XYZ</em></li>
+      <h2 class="text-center"><i class="fas fa-briefcase"></i> Work Experiences</h2>
+      <ul class="list-group list-group-flush mt-4">
+        <li class="list-group-item">Concept of Living Charitable Trust, PAN India – <strong>POCSO Act Training Expert (2025)</strong>: My Role – XYZ</li>
+        <li class="list-group-item">Jan Suraaj, Bihar (Madhepura) – <strong>Fellow</strong>: My Role – XYZ</li>
+        <li class="list-group-item">Krunodaya Foundation, Gaya – <strong>Program Manager</strong>: My Role – XYZ</li>
+        <li class="list-group-item">Jan Sahas, Delhi – <strong>Intern</strong>: My Role – XYZ</li>
+        <li class="list-group-item">Ideal Information Centre for Disabled, Hyderabad – <strong>Field Practitioner</strong>: My Role – XYZ</li>
+        <li class="list-group-item">Open Community, Hyderabad – <strong>Field Practitioner</strong>: My Role – XYZ</li>
       </ul>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Services</h2>
-      <p class="text-muted">Update Soon</p>
+  <!-- Services -->
+  <section id="services" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2><i class="fas fa-hand-holding-heart"></i> Services</h2>
+      <p class="mt-3">Update Soon...</p>
     </div>
   </section>
 
-  <!-- Certifications Section -->
+  <!-- Certifications -->
   <section id="certifications" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Certifications</h2>
-      <ul class="list-unstyled text-center">
-        <li><i class="fas fa-certificate list-icon"></i> Gender Sensitization - Samyak (2024)</li>
-        <li><i class="fas fa-certificate list-icon"></i> Constitutional Values & SW - Samvidhan Pracharak (2024)</li>
-        <li><i class="fas fa-certificate list-icon"></i> 11th National SW Congress - Dept. of SW, MANUU (2023)</li>
-        <li><i class="fas fa-certificate list-icon"></i> POCSO Act Training Expert - Concept of Living Charitable Trust (2025)</li>
+    <div class="container text-center">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <ul class="list-group list-group-flush mt-4">
+        <li class="list-group-item">Gender Sensitization – Samyak (2024)</li>
+        <li class="list-group-item">Constitutional Values & Social Work – Samvidhan Pracharak (2024)</li>
+        <li class="list-group-item">11th National SW Congress – MANUU Dept. of SW (2023)</li>
+        <li class="list-group-item">POCSO Act Training Expert – Concept of Living Charitable Trust (2025)</li>
       </ul>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <ul class="list-unstyled text-center">
-        <li>📊 Program Management • Research & Surveys • Critical thinking</li>
-        <li>🤝 Stakeholder Collaboration • Planning & Budgeting • Resource Mobilization</li>
-        <li>📣 Advocacy & Sensitization • Community Outreach • Team Work</li>
-        <li>🖥️ Microsoft Office Suite • Google Suite • Canva Design</li>
-        <li>🤖 Generative AI</li>
-      </ul>
+      <h2 class="text-center"><i class="fas fa-brain"></i> Skills</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-3 mt-4">
+        <div class="col">Program Management</div>
+        <div class="col">Research & Surveys</div>
+        <div class="col">Critical Thinking</div>
+        <div class="col">Stakeholder Collaboration</div>
+        <div class="col">Planning & Budgeting</div>
+        <div class="col">Resource Mobilization</div>
+        <div class="col">Advocacy & Sensitization</div>
+        <div class="col">Community Outreach</div>
+        <div class="col">Team Work</div>
+        <div class="col">Microsoft Office Suite</div>
+        <div class="col">Google Suite</div>
+        <div class="col">Generative AI</div>
+        <div class="col">Canva Design</div>
+      </div>
     </div>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blogs" class="py-5">
-    <div class="container text-center">
-      <h2>My Blogs</h2>
-      <p><a href="https://learnai-gen.github.io/Blog-Web/" target="_blank" class="btn btn-outline-primary">Visit Blog</a></p>
+  <!-- Blogs -->
+  <section id="blogs" class="py-5 text-center">
+    <div class="container">
+      <h2><i class="fas fa-blog"></i> My Blog</h2>
+      <a href="https://learnai-gen.github.io/Blog-Web/" class="btn btn-primary mt-3" target="_blank">Visit My Blog</a>
     </div>
   </section>
 
-  <!-- Hobbies Section -->
-  <section id="hobbies" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>My Hobbies</h2>
-      <p>🌿 Living in Wilds</p>
+  <!-- Hobbies -->
+  <section id="hobbies" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2><i class="fas fa-tree"></i> Hobbies</h2>
+      <p class="mt-3">🌿 Live in the Wilds</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
+  <footer class="text-white text-center py-4">
     <div class="container">
       <p class="mb-0">&copy; 2025 Abdul Majid. All rights reserved.</p>
     </div>
