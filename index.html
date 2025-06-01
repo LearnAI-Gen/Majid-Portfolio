@@ -67,6 +67,15 @@
     a:hover {
       color: #ccc;
     }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
   </style>
 </head>
 <body>
@@ -95,7 +104,7 @@
   </nav>
 
   <!-- Hero -->
-  <header id="home" class="text-white text-center py-5" style="background-color:#1a1a1a;">
+  <header id="home" class="text-white text-center py-5 fade-in" style="background-color:#1a1a1a;">
     <div class="container">
       <h1 class="display-4" style="color:#ffd700">Hi, I'm Abdul Majid</h1>
       <p class="lead">A Professional Social Worker | Tech Savvy | AI Generalist</p>
@@ -103,16 +112,15 @@
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- Content Sections -->
+  <section id="about" class="fade-in">
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <p>Dynamic Master of Social Work with over 1 year of experience leading impactful programs in disability inclusion, awareness, women’s empowerment, migrant labour advocacy, education, political consultation, campaign operations, and research.</p>
     </div>
   </section>
 
-  <!-- Qualifications Section -->
-  <section id="qualifications">
+  <section id="qualifications" class="fade-in">
     <div class="container">
       <h2 class="section-title">Qualifications</h2>
       <ul>
@@ -123,8 +131,7 @@
     </div>
   </section>
 
-  <!-- Experiences Section -->
-  <section id="experience">
+  <section id="experience" class="fade-in">
     <div class="container">
       <h2 class="section-title">Experiences</h2>
       <ul>
@@ -138,16 +145,14 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
+  <section id="services" class="fade-in">
     <div class="container">
       <h2 class="section-title">Services</h2>
       <p><em>Update Soon</em></p>
     </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
+  <section id="certifications" class="fade-in">
     <div class="container">
       <h2 class="section-title">Certifications</h2>
       <ul>
@@ -159,8 +164,7 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <div class="container">
       <h2 class="section-title">Skills</h2>
       <ul>
@@ -181,16 +185,14 @@
     </div>
   </section>
 
-  <!-- Blogs Section -->
-  <section id="blogs">
+  <section id="blogs" class="fade-in">
     <div class="container">
       <h2 class="section-title">Blogs</h2>
       <p>Check out my blog: <a href="https://learnai-gen.github.io/Blog-Web/" target="_blank">https://learnai-gen.github.io/Blog-Web/</a></p>
     </div>
   </section>
 
-  <!-- Hobbies Section -->
-  <section id="hobbies">
+  <section id="hobbies" class="fade-in">
     <div class="container">
       <h2 class="section-title">Hobbies</h2>
       <p>Live in Wilds</p>
@@ -205,5 +207,20 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
