@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -73,6 +72,11 @@
       background-color: #16324f;
       border-color: #16324f;
     }
+
+    .list-icon {
+      margin-right: 10px;
+      color: #1d3557;
+    }
   </style>
 </head>
 <body>
@@ -80,29 +84,29 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Majid's Portfolio</a>
+      <a class="navbar-brand fw-bold" href="#home">Majid's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Qualifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Hobbies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero text-white text-center">
+  <header id="home" class="hero text-white text-center">
     <div class="container">
       <h1>Hi, I'm Abdul Majid</h1>
       <p class="lead">Professional Social Worker | Tech Enthusiast | AI Generalist</p>
@@ -119,15 +123,15 @@
         </div>
         <div class="col-md-6">
           <h2>About Me</h2>
-          <p>I am a passionate social worker with a Master's degree and over a year of experience in leading impactful programs. My work spans across disability inclusion, women’s empowerment, migrant advocacy, and more.</p>
-          <p>I'm skilled in gender sensitisation, stakeholder engagement, and community development — reaching and transforming the lives of 5000+ individuals.</p>
+          <p>Master of Social Work with 1+ year of experience leading 5+ programs in disability inclusion, women's empowerment, labour advocacy, education, and political consultation.</p>
+          <p>Skilled in community engagement, advocacy, and research impacting over 5000+ lives.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Qualifications Section -->
-  <section id="services" class="py-5 bg-light">
+  <section id="qualifications" class="py-5 bg-light">
     <div class="container text-center">
       <h2>My Qualifications</h2>
       <div class="row g-4 mt-4">
@@ -159,6 +163,72 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Experiences Section -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Experiences</h2>
+      <ul class="list-unstyled">
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Concept of Living Charitable Trust (PAN India)</strong> – POCSO Act Training Expert<br><em>Role: XYZ</em></li>
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Jan Suraaj, Bihar Madhepura</strong> – Fellow<br><em>Role: XYZ</em></li>
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Krunodaya Foundation, Bihar Gaya</strong> – Program Manager<br><em>Role: XYZ</em></li>
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Jan Sahas, Delhi</strong> – Intern<br><em>Role: XYZ</em></li>
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Ideal Information Centre for Disabled, Hyderabad</strong> – Field Practitioner<br><em>Role: XYZ</em></li>
+        <li><i class="fas fa-briefcase list-icon"></i><strong>Open Community, Hyderabad</strong> – Field Practitioner<br><em>Role: XYZ</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Services</h2>
+      <p class="text-muted">Update Soon</p>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Certifications</h2>
+      <ul class="list-unstyled text-center">
+        <li><i class="fas fa-certificate list-icon"></i> Gender Sensitization - Samyak (2024)</li>
+        <li><i class="fas fa-certificate list-icon"></i> Constitutional Values & SW - Samvidhan Pracharak (2024)</li>
+        <li><i class="fas fa-certificate list-icon"></i> 11th National SW Congress - Dept. of SW, MANUU (2023)</li>
+        <li><i class="fas fa-certificate list-icon"></i> POCSO Act Training Expert - Concept of Living Charitable Trust (2025)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <ul class="list-unstyled text-center">
+        <li>📊 Program Management • Research & Surveys • Critical thinking</li>
+        <li>🤝 Stakeholder Collaboration • Planning & Budgeting • Resource Mobilization</li>
+        <li>📣 Advocacy & Sensitization • Community Outreach • Team Work</li>
+        <li>🖥️ Microsoft Office Suite • Google Suite • Canva Design</li>
+        <li>🤖 Generative AI</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blogs" class="py-5">
+    <div class="container text-center">
+      <h2>My Blogs</h2>
+      <p><a href="https://learnai-gen.github.io/Blog-Web/" target="_blank" class="btn btn-outline-primary">Visit Blog</a></p>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>My Hobbies</h2>
+      <p>🌿 Living in Wilds</p>
     </div>
   </section>
 
