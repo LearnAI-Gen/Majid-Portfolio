@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header class="header">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <h1 class="logo">My Portfolio</h1>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
-      </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Your Name</h1>
+      <p class="lead">A Passionate Web Developer & Designer</p>
+      <a href="#portfolio" class="btn btn-primary btn-lg mt-3">View Portfolio</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="py-5 bg-light">
     <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm a passionate web developer with a focus on creating professional and user-friendly websites. I love coding, designing, and bringing ideas to life online.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="About me">
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>Hello! I'm a web developer with experience in creating modern and user-friendly websites. I specialize in HTML, CSS, JavaScript, and Bootstrap.</p>
+          <p>I love turning ideas into interactive digital experiences. Let’s build something amazing together!</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Services</h2>
-      <ul>
-        <li>Web Design</li>
-        <li>Frontend Development</li>
-        <li>Responsive Design</li>
-        <li>Portfolio Websites</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <p>Check out some of my recent projects below.</p>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section id="blog" class="blog">
-    <div class="container">
-      <h2>Blog</h2>
-      <p>Coming soon: Tips, tutorials, and updates from my journey as a web developer.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2>My Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Responsive and fast-loading websites built with modern technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">Visually appealing and user-friendly interfaces tailored for your brand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Responsive Design</h5>
+              <p class="card-text">Mobile-first designs that look great on any device or screen size.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+      <p class="mb-0">&copy; 2025 MyPortfolio. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
