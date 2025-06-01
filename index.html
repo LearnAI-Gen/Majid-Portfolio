@@ -3,18 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdul Majid</title>
+  <title>Abdul Majid - Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1d3557, #457b9d);
+      padding: 120px 0;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    section h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #212529;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #ddd;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    .btn-primary {
+      background-color: #1d3557;
+      border-color: #1d3557;
+    }
+
+    .btn-primary:hover {
+      background-color: #16324f;
+      border-color: #16324f;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Majid's Portfolio</a>
+      <a class="navbar-brand fw-bold" href="#">Majid's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,55 +104,55 @@
   <!-- Hero Section -->
   <header class="hero text-white text-center">
     <div class="container">
-      <h1 class="display-4">Hi, I'm Abdul Majid</h1>
-      <p class="lead">A Professional Social Worker | Tech Savvy | AI Generalist</p>
-      <a href="#portfolio" class="btn btn-primary btn-lg mt-3">View Portfolio</a>
+      <h1>Hi, I'm Abdul Majid</h1>
+      <p class="lead">Professional Social Worker | Tech Enthusiast | AI Generalist</p>
+      <a href="#about" class="btn btn-primary btn-lg mt-4">Explore More</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-5 bg-light">
+  <section id="about" class="py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="About me">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="https://via.placeholder.com/500x300" class="img-fluid shadow-sm" alt="About me">
         </div>
         <div class="col-md-6">
           <h2>About Me</h2>
-          <p>Dynamic Master of Social Work with over 1 year of experience leading 5+ impactful programs in disability inclusion, community awareness, women’s empowerment, migrant labour advocacy, children’s education, political consultation, campaign operations, and research.</p>
-          <p> Skilled in gender sensitisation, stakeholder collaboration, resource mobilisation, and social equity advocacy, driving transformative community development for 5000+ individuals.</p>
+          <p>I am a passionate social worker with a Master's degree and over a year of experience in leading impactful programs. My work spans across disability inclusion, women’s empowerment, migrant advocacy, and more.</p>
+          <p>I'm skilled in gender sensitisation, stakeholder engagement, and community development — reaching and transforming the lives of 5000+ individuals.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5">
+  <!-- Qualifications Section -->
+  <section id="services" class="py-5 bg-light">
     <div class="container text-center">
       <h2>My Qualifications</h2>
-      <div class="row mt-4">
+      <div class="row g-4 mt-4">
         <div class="col-md-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-code fa-3x mb-3 text-primary"></i>
-              <h5 class="card-title">Master</h5>
+              <i class="fas fa-user-graduate fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Master's Degree</h5>
               <p class="card-text">Social Work</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
-              <h5 class="card-title">Batchlor of Arts</h5>
-              <p class="card-text">Potical Science</p>
+              <i class="fas fa-landmark fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Bachelor of Arts</h5>
+              <p class="card-text">Political Science</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm p-3">
             <div class="card-body">
-              <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+              <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
               <h5 class="card-title">Diploma</h5>
               <p class="card-text">Fire and Safety Engineering</p>
             </div>
@@ -97,7 +163,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="bg-dark text-white text-center py-4 mt-5">
     <div class="container">
       <p class="mb-0">&copy; 2025 Abdul Majid. All rights reserved.</p>
     </div>
